@@ -111,8 +111,8 @@ async function fetchAndSendNews() {
     }
 }
 
-// 매일 아침 9시에 실행
-cron.schedule('0 9 * * *', async () => {
+// 평일 오전 9시에만 실행 (월-금)
+cron.schedule('0 9 * * 1-5', async () => {
     console.log('Running scheduled fetch...');
     fetchAndSendNews();
 });
