@@ -4,12 +4,16 @@
   "description": "Discord bot for GeekNews updates",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "echo 'Build completed'"
   },
   "dependencies": {
     "discord.js": "^14.14.1",
     "puppeteer": "^21.9.0",
     "node-cron": "^3.0.3",
     "dotenv": "^16.4.1"
+  },
+  "engines": {
+    "node": ">=16.9.0"
   }
 }
